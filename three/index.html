@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 3</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+
+    <h3>
+        Type Something in Textbox
+    </h3>
+    <br>
+    <input type="text">
+
+    <script>
+        $("input").keyup(function() {
+            $("h3").text($("input").val());
+        })
+    </script>
+</body>
+</html>

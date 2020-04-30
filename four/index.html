@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 4</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <style>
+        div { 
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div>SLOW</div>
+    <div>FAST</div>
+    <div>400</div>
+    <div>2000</div>
+
+    <script>
+        $("div").fadeOut(); // initial make all fadeOut
+        $("div:first-child").fadeIn("slow");
+        $("div:nth-child(2)").fadeIn("fast");
+        $("div:nth-child(3)").fadeIn(400);
+        $("div:last-of-type").fadeIn(2000);
+    </script>
+</body>
+</html>

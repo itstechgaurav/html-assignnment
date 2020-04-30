@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 5</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    
+</head>
+<body>
+
+    <input type="text">
+    <input type="button" value="Click me">
+
+    <script>
+        $("input[type='button']").click(function() {
+            $("input[type='text']").val($("input[type='button']").val())
+        })
+    </script>
+</body>
+</html>
